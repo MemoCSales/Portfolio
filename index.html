@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>My Software Engineer Portfolio</title>
+		<!-- Line to add link for Fonts -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+		 <link rel="stylesheet" href="./src/styles/styles.css">
+	</head>
+	<body>
+		<header id="header" class="container mx-auto ">
+			<nav id="nav-bar" class="container mx-auto px-6 tablet:px-8 laptop:px-10 desktop:px-12 py-5 flex justify-between items-center bg-neutral-800 rounded-b-md shadow-md">
+				<!-- Hamburger menu for mobile -->
+				 <div class="w-full flex justify-between items-center">
+					 <div class="tablet:hidden">
+						<button class="mobile-menu-button p-2">
+							<i class="fas fa-bars text-gray-400"></i>
+						</button>
+					 </div>
+				 </div>
+				 <!-- Mobile Menu (hidden by default) -->
+				 <div class="mobile-menu hidden w-full tablet:hidden">
+					 <div class="flex flex-col space-y-4 mt-4">
+						 <a class="nav-link" href="#home">Home</a>
+						 <a class="nav-link" href="#about">About Me</a>
+						 <a class="nav-link" href="#projects">Projects</a>
+						 <a class="nav-link" href="#experience">Profesional Experience</a>
+						 <a class="nav-link" href="#contact">Contact</a>
+						</div>
+					</div>
+					<!-- Desktop Navigation -->
+					<div class="hidden tablet:flex flex-col tablet:flex-row tablet:space-x-6">
+						<a class="nav-link" href="#home">Home</a>
+						<a class="nav-link" href="#about">About Me</a>
+						<a class="nav-link" href="#projects">Projects</a>
+						<a class="nav-link" href="#experience">Profesional Experience</a>
+						<a class="nav-link" href="#contact">Contact</a>
+					</div>
+					<!-- Social icons moved to top level for mobile -->
+					 <div>
+						 <div class="flex space-x-4">
+							 <a class="icon-link text-2xl" href="https://www.linkedin.com/in/manuel-guillermo-cruz-sales-logistics07/">
+								 <i class="fab fa-linkedin"></i>
+							 </a>
+							 <a class="icon-link text-2xl" href="https://github.com/MemoCSales">
+								 <i class="fab fa-github"></i>
+							 </a>
+						 </div>
+					 </div>
+			</nav>
+		</header>
+		<!-- <main>
+			<section id="home" class="hero-section">
+				<h1>Oh yeah</h1>
+			</section>
+			<section id="about" class="about-me">
+				<h1>About me. oh  yeah</h1>
+			</section>
+			<section id="projects" class="project-grid">
+				<h1>Project Grid. oh yeah</h1>
+			</section>
+			<section id="experience" class="pro-experience">
+				<h1>Pro Experience oh yeah</h1>
+			</section>
+			<section id="contact" class="contact">
+				<h1>Oh yeah contact me</h1>
+			</section>
+		</main>
+		<footer>
+			<h1>Made with love!</h1>
+		</footer> -->
+		<script src="src/scripts/script.js"></script>
+	</body>
+</html>
