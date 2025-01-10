@@ -1,7 +1,7 @@
 export default {
-  base: '/memocsales.github.io/',
+  base: './',
   build: {
-    outDir: "dist",
-    assetsDir: "assets",
+    outDir: 'dist',
+    assetsDir: 'assets',
   },
 };
