@@ -1,3 +1,5 @@
+import './style.css'
+
 const mobileMenuBtn = document.querySelector('.mobile-menu-button');
 const mobileMenu = document.querySelector('.mobile-menu');
 
