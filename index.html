@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>My Software Engineer Portfolio</title>
+		<!-- Line to add link for Fonts -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap"/>
+		<link rel="stylesheet" crossorigin href="/assets/index-BhhyguzK.css">
+	</head>
+	<body>
+		<div class="bg-primary font-mono">
+			<header id="header" class="container mx-auto">
+				<nav id="nav-bar" class="container mx-auto px-6 tablet:px-8 laptop:px-10 desktop:px-12 py-5 flex justify-between items-center bg-secondary rounded-b-md shadow-md">
+					<!-- Hamburger menu for mobile -->
+					 <div class="w-full tablet:w-auto flex justify-between items-center">
+						 <div class="tablet:hidden">
+							<button class="mobile-menu-button p-2">
+								<i class="fas fa-bars text-text"></i>
+							</button>
+						 </div>
+					 </div>
+					 <!-- Mobile Menu (hidden by default) -->
+					 <div class="mobile-menu hidden w-full tablet:hidden">
+						 <div class="flex flex-col space-y-4 mt-4">
+							 <a class="nav-link" href="#home">Home</a>
+							 <a class="nav-link" href="#about">About Me</a>
+							 <a class="nav-link" href="#experience">Experience</a>
+							 <a class="nav-link" href="#projects">Recent Work</a>
+							 <a class="nav-link" href="#contact">Get In Touch</a>
+							</div>
+						</div>
+						<!-- Desktop Navigation -->
+						<div class="hidden tablet:flex tablet:flex-col laptop:flex-row tablet:space-y-4 laptop:space-y-0 laptop:space-x-20">
+							<a class="nav-link" href="#home">Home</a>
+							<a class="nav-link" href="#about">About Me</a>
+							<a class="nav-link" href="#experience">Experience</a>
+							<a class="nav-link" href="#projects">Recent Work</a>
+							<a class="nav-link" href="#contact">Get In Touch</a>
+						</div>
+						<!-- Social icons moved to top level for mobile -->
+						 <div>
+							 <div class="flex space-x-6  mobile:px-6 tablet:px-10">
+								 <a class="icon-link text-2xl" href="https://www.linkedin.com/in/manuel-guillermo-cruz-sales-logistics07/">
+									 <i class="fab fa-linkedin"></i>
+								 </a>
+								 <a class="icon-link text-2xl" href="https://github.com/MemoCSales">
+									 <i class="fab fa-github"></i>
+								 </a>
+							 </div>
+						 </div>
+				</nav>
+			</header>
+		</div>
+		<div class="hero min-h-screen bg-primary py-0 tablet:py-20">
+			<section>
+				<div class="container mx-auto px-10 flex flex-col tablet:flex-row items-center justify-between">
+					<div class="flex-1 tablet:pr-12 items-center order-last tablet:order-first">
+						<h1 class="font-mono font-bold text-text-light mb-6">
+							<span class="block text-4xl tablet:text-5xl laptop:text-5xl mb-2">Hi there!</span>
+							<span class="block text-4xl tablet:text-5xl laptop:text-5xl">I'm Guillermo Sales</span>
+						</h1>
+						<p class="font-mono pb-5 text-lg tablet:text-xl  text-text leading-relaxed">
+							I am a software developer passionate about problem solving and continuous learning. After discovering my interest in programming during my professional career, I fully committed myself to this path, embracing the philosophy “learn how to learn” at 42 School.
+						</p>
+						<!-- Add the CTA button -->
+						 <div>
+							 <a href="#about"
+								 class="inline-block px-6 py-3 text-lg font-mono
+								 text-primary bg-accent rounded-md shadow-glow hover:shadow-glow-hover 
+								 hover:bg-opacity-90 transition-all duration-300">
+								Let's go!
+								<i class="fas fa-arrow-right ml-2"></i>
+							</a>
+						 </div>
+					</div>
+					<div class="flex-1 mt-12 pb-10 tablet:pb-0 tablet:mt-0 flex justify-center order-first tablet:order-last">
+						<img 
+						src="https://res.cloudinary.com/dbnex3949/image/upload/v1736509889/profile_picture_mgcs_sbfppw.jpg" 
+						alt="profile_picture_mgcs"
+						class="rounded-full w-64 h-64 object-cover shadow-sm">
+					</div>
+				</div>
+			</section>
+		</div>
+		<div id="about" class="about min-h-screen bg-primary py-0 tablet:py-20">
+			<section class="container mx-auto px-10">
+				<!-- Title -->
+				 <h2 class="font-mono font-bold text-text-light text-3xl tablet:text-4xl mb-12 relative">
+					<span class="text-accent">#</span> About Me
+				 </h2>
+
+				 <!-- Content -->
+				  <div class="flex flex-col tablet:flex-row gap-10">
+					<!-- Text -->
+					 <div class="flex-1 space-y-6">
+						<p class="font-mono text-text text-lg leading-relaxed">
+							Hello! My name is Guillermo, and I enjoy creating things that make your live easier. 
+                    		My interest in software development started back when I decided to try the Harvard
+							CS Computer Science and AI course — turns out understanding memory allocation in C
+							taught me a lot about file descriptors, memory management, virtualization,
+							Object Orient Programming, and so much more!
+						</p>
+						<p class="font-mono text-text text-lg leading-relaxed">
+							Now, and I've had the privilege of learning at 42 School, 
+                    		where I've developed a strong foundation in software development fundamentals,
+							peer-to-peer learning, teamwork, resilience, soft-skills and gained experience 
+							with various technologies.
+						</p>
+
+						<!-- Skills Grid -->
+						 <div class="mt=8">
+							<h3 class="font-mono text-text-light text-xl mb-4">
+								Technologies I've been working with:
+							</h3>
+							<div class="grid grid-cols-2 tablet:grid-cols-3 gap-4">
+								<span class="font-mono text-text"><i class="fas fa-caret-right text-accent mr-2"></i>C</span>
+								<span class="font-mono text-text"><i class="fas fa-caret-right text-accent mr-2"></i>C++</span>
+								<span class="font-mono text-text"><i class="fas fa-caret-right text-accent mr-2"></i>Git</span>
+								<span class="font-mono text-text"><i class="fas fa-caret-right text-accent mr-2"></i>Shell</span>
+								<span class="font-mono text-text"><i class="fas fa-caret-right text-accent mr-2"></i>Docker</span>
+								<span class="font-mono text-text"><i class="fas fa-caret-right text-accent mr-2"></i>Arduino</span>
+								<span class="font-mono text-text"><i class="fas fa-caret-right text-accent mr-2"></i>HTML && CSS</span>
+								<span class="font-mono text-text"><i class="fas fa-caret-right text-accent mr-2"></i>JavaScript</span>
+							</div>
+						 </div>
+					 </div>
+
+					 <!-- Image Container -->
+					  <div class="flex-1 flex justify-center items-start tablet:items-center">
+						<div class="relative group grid grid-cols-1 tablet:grid-rows-2 gap-4">
+							<div class="relative">
+								<div class="absolute -inset-0.5 bg-accent rounded-lg blur opacity-20 group-hover:opacity-30 transition duration-300"></div>
+								<img src="https://res.cloudinary.com/dbnex3949/image/upload/v1736518462/IMG_4167_lvh9ea.jpg" 
+								alt="about me image 2"
+								class="relative rounded-lg w-full max-w-md hover:-translate-y-1 transition duration-300"
+								>
+							</div>
+							<div class="relative">
+								<div class="absolute -inset-0.5 bg-accent rounded-lg blur opacity-20 group-hover:opacity-30 transition duration-300"></div>
+								<img src="https://res.cloudinary.com/dbnex3949/image/upload/v1736518292/IMG_4105_l1nnvu.jpg" 
+									alt="about me image"
+									class="relative rounded-lg w-full max-w-md hover:-translate-y-1 transition duration-300"
+									>
+							</div>
+						</div>
+					  </div>
+				  </div>
+			</section>
+		</div>
+		<footer></footer>
+		<script src="src/scripts/script.js"></script>
+	</body>
+</html>
