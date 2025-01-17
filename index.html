@@ -27,7 +27,7 @@
 								 <a class="nav-link" href="#home">Home</a>
 								 <a class="nav-link" href="#about">About Me</a>
 								 <a class="nav-link" href="#experience">Experience</a>
-								 <a class="nav-link" href="#projects">Recent Work</a>
+								 <a class="nav-link" href="#projects">Recent Projects</a>
 								 <a class="nav-link" href="#contact">Get In Touch</a>
 								</div>
 							</div>
@@ -36,7 +36,7 @@
 								<a class="nav-link" href="#home">Home</a>
 								<a class="nav-link" href="#about">About Me</a>
 								<a class="nav-link" href="#experience">Experience</a>
-								<a class="nav-link" href="#projects">Recent Work</a>
+								<a class="nav-link" href="#projects">Recent Projects</a>
 								<a class="nav-link" href="#contact">Get In Touch</a>
 							</div>
 							<!-- Social icons moved to top level for mobile -->
@@ -160,9 +160,26 @@
 					  </div>
 				</section>
 			</div>
-			<div id="projects" class="projects min-h-screen bg-secondary py-20 mt-20 tablet:mt-0 selection:bg-accent selection:text-text-light">
+			<div id="projects" class="projects min-h-screen bg-secondary py-10 mt-20 tablet:mt-0 selection:bg-accent selection:text-text-light">
 				<section class="container mx-auto px-10">
+					<!-- Title -->
+					 <h2 class="font-mono font-bold text-text-light text-3xl tablet:text-4xl mb-12 relative">
+						<span class="text-accent">#</span> Recent Projects
+					 </h2>
 
+					 <!-- Projects Scroll Container -->
+					  <div class="relative">
+						<!-- Scroll Container -->
+						 <div class="overflow-x-auto pb-4 hide-scrollbar">
+							<div id="projectsContainer" class="flex gap-6 w-max">
+								<!-- Projects cards will be inserted by JS -->
+							</div>
+						 </div>
+
+						 <!-- Scroll indicators -->
+						  <div class="absolute left-0 top-1/2 -translate-y-1/2 bg-gradient-to-r from-secondary to-transparent w-20 h-full pointer-events-none"></div>
+						  <div class="absolute right-0 top-1/2 -translate-y-1/2 bg-gradient-to-l from-secondary to-transparent w-20 h-full pointer-events-none"></div>
+					  </div>
 				</section>
 			</div>
 			<div id="contact" class="contact min-h-screen bg-primary py-10 mt-20 tablet:mt-0 selection:bg-accent selection:text-text-light">

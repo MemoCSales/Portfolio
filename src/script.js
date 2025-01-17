@@ -64,6 +64,40 @@ const education = [
   },
 ];
 
+const projects = [
+  {
+    title: "IRC Server",
+    description: "Internet Relay Chat server implementation in C++",
+    image:
+      "https://res.cloudinary.com/dbnex3949/image/upload/v1737137873/chaticon_iyflxk.png",
+    link: "https://github.com/MemoCSales/ft_irc",
+  },
+  {
+    title: "Mini Shell",
+    description: "Unix shell implementation with process handling, and more...",
+    image:
+      "https://res.cloudinary.com/dbnex3949/image/upload/v1737139605/terminal_rkqa0z.png",
+    link: "https://github.com/MemoCSales/42_minishell",
+  },
+  {
+    title: "3D Game",
+    description:
+      "Developed with raycasting techniques. The project is inspired by the classic Wolfenstein 3D game.",
+    image:
+      "https://res.cloudinary.com/dbnex3949/image/upload/v1737139605/image_synrb2.png",
+    link: "https://github.com/MemoCSales/42_cub3D",
+  },
+  {
+    title: "A wireframe model",
+    description:
+      "This project is about showing a landscape as a 3D object with lines outlining all surfaces.",
+    image:
+      "https://res.cloudinary.com/dbnex3949/image/upload/v1737140010/FdF-42_b8cu5m.png",
+    link: "https://github.com/MemoCSales/42_FdF",
+  },
+];
+
+
 function createExperienceCard(experience) {
 	return `
     <div class="bg-secondary rounded-lg p-6 shadow-md hover:-translate-y-1 transition-all duration-300">
@@ -130,6 +164,29 @@ function createEducationCard(education) {
   `;
 }
 
+function createProjectCard(project) {
+  return `
+    <div class="flex-shrink-0 w-80 bg-primary rounded-lg overflow-hidden shadow-md hover:-translate-y-1 transition-all duration-300">
+      <img 
+        src="${project.image}" 
+        alt="${project.title}"
+        class="w-full h-48 object-cover"
+      >
+      <div class="p-6">
+        <h3 class="font-mono text-text-light text-xl mb-2">${project.title}</h3>
+        <p class="font-mono text-text mb-4">${project.description}</p>
+        <a 
+          href="${project.link}"
+          target="_blank"
+          class="inline-block px-4 py-2 bg-accent text-primary font-mono rounded-lg shadow-glow hover:shadow-glow-hover hover:bg-opacity-90 transition-all duration-300"
+        >
+          Know more
+        </a>
+      </div>
+    </div>
+  `;
+}
+
 const experienceGrid = document.getElementById('experienceGrid');
 if (experienceGrid) {
 	experienceGrid.innerHTML = experiences.map(exp => createExperienceCard(exp)).join('');
@@ -140,6 +197,11 @@ if (educationGrid) {
   educationGrid.innerHTML = education
     .map((exp) => createEducationCard(exp))
     .join("");
+}
+
+const projectsContainer = document.getElementById('projectsContainer');
+if (projectsContainer) {
+  projectsContainer.innerHTML = projects.map(project => createProjectCard(project)).join('');
 }
 
 // Smooth scrolling for navigation links
