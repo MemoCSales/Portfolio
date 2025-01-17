@@ -168,7 +168,7 @@
 					 </h2>
 
 					 <!-- Projects Scroll Container -->
-					  <div class="relative">
+					  <div class="relative px-12">
 						<!-- Scroll Container -->
 						 <div class="overflow-x-auto pb-4 hide-scrollbar">
 							<div id="projectsContainer" class="flex gap-6 w-max">
@@ -176,9 +176,13 @@
 							</div>
 						 </div>
 
-						 <!-- Scroll indicators -->
-						  <div class="absolute left-0 top-1/2 -translate-y-1/2 bg-gradient-to-r from-secondary to-transparent w-20 h-full pointer-events-none"></div>
-						  <div class="absolute right-0 top-1/2 -translate-y-1/2 bg-gradient-to-l from-secondary to-transparent w-20 h-full pointer-events-none"></div>
+						   <!-- Side arrows for scrolling -->
+						<button class="absolute left-2 top-1/2 -translate-y-1/2 bg-accent text-primary p-3 rounded-full hover:bg-opacity-90 transition-all duration-300 z-10">
+							<i class="fas fa-chevron-left"></i>
+						</button>
+						<button class="absolute right-2 top-1/2 -translate-y-1/2 bg-accent text-primary p-3 rounded-full hover:bg-opacity-90 transition-all duration-300 z-10">
+							<i class="fas fa-chevron-right"></i>
+						</button>
 					  </div>
 				</section>
 			</div>
